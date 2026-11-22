@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shadow Vault — The Lantern Heist</title>
+<link rel="icon" href="data:,">
+<style>
+  body { margin:0; background:#07080f; color:#e8ecff; font-family:system-ui,sans-serif; display:flex; flex-direction:column; align-items:center; }
+  h1 { font-size:20px; margin:12px 0 2px; color:#ffd94d; letter-spacing:2px; }
+  #hud { font-size:13.5px; min-height:20px; color:#b9c2e8; text-align:center; padding:0 10px; }
+  #banner { font-size:15px; min-height:22px; color:#ff6b5e; font-weight:bold; }
+  canvas { border:2px solid #2c3550; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,.6); max-width:96vw; }
+  button { margin:10px; background:#1f8a8a; color:#fff; border:0; padding:9px 22px; border-radius:20px; font-size:15px; cursor:pointer; }
+  p.help { color:#7c86ad; font-size:13px; max-width:900px; text-align:center; margin:2px 12px 14px; }
+</style>
+</head>
+<body>
+  <h1>🏮 SHADOW VAULT 🏮</h1>
+  <div id="hud"></div>
+  <div id="banner"></div>
+  <canvas id="game" width="960" height="600"></canvas>
+  <button id="startBtn">Begin the heist</button>
+  <p class="help">WASD / arrows move · <b>Shift</b> sneak-crawl (slow, hard to see) · <b>E</b> sprint (fast, loud footsteps) ·
+  <b>Click / Q</b> throw a coin to distract · Hide on dark shadow rugs, stay out of lantern light, use shelves as cover.
+  Lift every relic, then reach the EXIT door. Three floors, three lanterns — get caught three times and the night is over.</p>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
